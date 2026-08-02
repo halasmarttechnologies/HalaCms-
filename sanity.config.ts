@@ -4,6 +4,7 @@ import { visionTool } from '@sanity/vision'
 import { schema } from './schemaTypes'
 import { structure } from './structure'
 import { monochromeTheme } from './theme'
+import { CustomNavbar } from './CustomNavbar'
 
 export default defineConfig({
   name: 'default',
@@ -16,6 +17,12 @@ export default defineConfig({
     structureTool({ structure }),
     visionTool(),
   ],
+
+  studio: {
+    components: {
+      navbar: CustomNavbar,
+    },
+  },
 
   schema: schema,
 
