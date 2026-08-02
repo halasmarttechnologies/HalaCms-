@@ -4,7 +4,7 @@ import { visionTool } from '@sanity/vision'
 import { schema } from './schemaTypes'
 import { structure } from './structure'
 import { monochromeTheme } from './theme'
-import { CustomNavbar } from './CustomNavbar'
+import { CustomCMSDashboard } from './CustomCMSDashboard'
 
 export default defineConfig({
   name: 'default',
@@ -20,7 +20,7 @@ export default defineConfig({
 
   studio: {
     components: {
-      navbar: CustomNavbar,
+      layout: CustomCMSDashboard,
     },
   },
 
